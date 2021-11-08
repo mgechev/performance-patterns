@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { List } from 'immutable';
 
 import { ListGenerator, EmployeeData } from './shared/list-generator.service';
@@ -28,8 +28,8 @@ const NumRange: [number, number] = [23, 28];
   styleUrls: ['app.component.css']
 })
 export class AppComponent {
-  salesList: List<EmployeeData> = List(Sales);
-  rndList: List<EmployeeData> = List(Rnd);
+  salesList = List(Sales)
+  rndList = List(Rnd)
   label = '';
 
   constructor(private generator: ListGenerator) {}

@@ -6,10 +6,9 @@ import { AppComponent } from './app.component';
 import { EmployeeListModule } from './employee-list/employee-list.module';
 
 import { ListGenerator } from './shared/list-generator.service';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  imports: [BrowserModule, EmployeeListModule, BrowserAnimationsModule],
+  imports: [BrowserModule, EmployeeListModule],
   providers: [ListGenerator],
   declarations: [AppComponent],
   bootstrap: [AppComponent]
