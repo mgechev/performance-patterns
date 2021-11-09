@@ -6,6 +6,7 @@ import { ListGenerator, EmployeeData } from './shared/list-generator.service';
 
 import { Rnd } from './data/rnd-70-27-30';
 import { Sales } from './data/sales-70-27-30';
+import { List } from 'immutable';
 
 const NumRange: [number, number] = [23, 28];
 
@@ -20,23 +21,23 @@ const NumRange: [number, number] = [23, 28];
       <app-employee-list
         [data]="salesList"
         department="Sales"
-        (add)="add(salesList, $event)"
-        (remove)="remove(salesList, $event)"
+        (add)="salesList = add(salesList, $event)"
+        (remove)="salesList = remove(salesList, $event)"
       ></app-employee-list>
 
       <app-employee-list
         [data]="rndList"
         department="R&D"
-        (add)="add(rndList, $event)"
-        (remove)="remove(rndList, $event)"
+        (add)="rndList = add(rndList, $event)"
+        (remove)="rndList = remove(rndList, $event)"
       ></app-employee-list>
     </section>
   `,
   styleUrls: ['app.component.css']
 })
 export class AppComponent implements OnInit {
-  salesList: EmployeeData[] = Sales;
-  rndList: EmployeeData[] = Rnd;
+  salesList: List<EmployeeData> = List(Sales);
+  rndList: List<EmployeeData> = List(Rnd);
   label = '';
 
   constructor(private generator: ListGenerator, private zone: NgZone) {}
@@ -67,11 +68,11 @@ export class AppComponent implements OnInit {
     });
   }
 
-  add(list: EmployeeData[], name: string) {
+  add(list: List<EmployeeData>, name: string) {
     return list.unshift({ label: name, num: this.generator.generateNumber(NumRange) });
   }
 
-  remove(list: EmployeeData[], node: EmployeeData) {
+  remove(list: List<EmployeeData>, node: EmployeeData) {
     return list.splice(list.indexOf(node), 1);
   }
 }
