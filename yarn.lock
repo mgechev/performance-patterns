@@ -1340,6 +1340,11 @@
   resolved "https://registry.yarnpkg.com/@types/cors/-/cors-2.8.12.tgz#6b2c510a7ad7039e98e7b8d3d6598f4359e5c080"
   integrity sha512-vt+kDhq/M2ayberEtJcIN/hxXy1Pk+59g2FV/ZQceeaTyCtCucjL2Q7FXlFjtWn4n15KCr1NE2lNNFhp0lEThw==
 
+"@types/d3@^3":
+  version "3.5.46"
+  resolved "https://registry.yarnpkg.com/@types/d3/-/d3-3.5.46.tgz#8b890138ea035b703ef4cdd2de0d86f8619c1c69"
+  integrity sha512-jNHfiGd41+JUV43LTMzQNidyp4Hn0XfhoSmy8baE0d/N5pGYpD+yX03JacY/MH+smFxYOQGXlz4HxkRZOuRNOQ==
+
 "@types/eslint-scope@^3.7.0":
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/@types/eslint-scope/-/eslint-scope-3.7.1.tgz#8dc390a7b4f9dd9f1284629efce982e41612116e"
@@ -1392,6 +1397,20 @@
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
+
+"@types/plotly.js-dist-min@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@types/plotly.js-dist-min/-/plotly.js-dist-min-2.3.0.tgz#b1b86b94b86e4628d97beca95cc7dd26c2f30758"
+  integrity sha512-MPvZbG2RA3zuU+AYgsVysJvNLyf3bvi1nt3ywHARwMW2TB38VQuYhQFD1pTRzBuqiV5ieYif7mLY5bHWGUVZqw==
+  dependencies:
+    "@types/plotly.js" "*"
+
+"@types/plotly.js@*":
+  version "1.54.16"
+  resolved "https://registry.yarnpkg.com/@types/plotly.js/-/plotly.js-1.54.16.tgz#7e76e2828ff06f46f8ff9ffd4eb56bf0c4703931"
+  integrity sha512-Kli9UqZwO12cvJ4dT2kGaBtpgq96y8TPsvsB87XTCO+jEMMVy0OZ4WMW+8plS/lBKCtMNtwRNYNlD3+8Stgn2Q==
+  dependencies:
+    "@types/d3" "^3"
 
 "@types/retry@^0.12.0":
   version "0.12.1"
@@ -4701,6 +4720,11 @@ pkg-dir@^4.1.0:
   integrity sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==
   dependencies:
     find-up "^4.0.0"
+
+plotly.js-dist-min@^2.6.2:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/plotly.js-dist-min/-/plotly.js-dist-min-2.6.2.tgz#4981a5ccc2d740d36e9103d731c6c6df2d124f9f"
+  integrity sha512-tuXG9CEMXTt0AyrcHwQ70iYXCPy/ElvRnORFEgRFPVj0rJm/5TsG75uD9BpNi8bxRdErzaVt118o2wAEfayYog==
 
 portfinder@^1.0.28:
   version "1.0.28"

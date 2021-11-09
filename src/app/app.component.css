@@ -1,9 +1,28 @@
 :host {
   margin-bottom: 50px;
   display: flex;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+}
+
+.overview {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.overview #chart {
+  max-width: 600px;
+  height: 500px;
+  margin: auto;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
 }
 
 @media screen and (max-width: 600px) {
