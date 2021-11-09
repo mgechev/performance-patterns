@@ -12,7 +12,6 @@ const fibonacci = (num: number): number => {
 
 @Component({
   selector: 'app-employee-list',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <h1 title="Department">{{ department }}</h1>
 
