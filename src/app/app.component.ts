@@ -62,7 +62,7 @@ export class AppComponent implements OnInit {
       data[0].y.push(entity[1]);
     }
 
-    Plotly.newPlot('chart', data as any);
+    Plotly.newPlot('chart', data);
   }
 
   add(list: EmployeeData[], name: string) {
