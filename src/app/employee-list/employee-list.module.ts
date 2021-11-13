@@ -6,6 +6,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatChipsModule } from '@angular/material/chips';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 import { EmployeeListComponent } from './employee-list.component';
 import { NameInputComponent } from './name-input/name-input.component';
@@ -21,6 +22,7 @@ import { FibonacciPipe } from './fibonacci.pipe';
     MatFormFieldModule,
     MatInputModule,
     MatChipsModule,
+    ScrollingModule
   ],
   declarations: [EmployeeListComponent, NameInputComponent, ListComponent, FibonacciPipe],
   exports: [EmployeeListComponent],

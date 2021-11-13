@@ -36,8 +36,8 @@ const NumRange: [number, number] = [23, 28];
   styleUrls: ['app.component.css']
 })
 export class AppComponent implements OnInit {
-  salesList = List(Sales)
-  rndList = List(Rnd)
+  salesList = List(Sales).concat(List(Sales)).concat(List(Sales)).concat(List(Sales)).concat(List(Sales)).concat(List(Sales)).concat(List(Sales)).concat(List(Sales)).concat(List(Sales));
+  rndList = List(Rnd).concat(List(Rnd)).concat(List(Rnd)).concat(List(Rnd)).concat(List(Rnd)).concat(List(Rnd)).concat(List(Rnd)).concat(List(Rnd)).concat(List(Rnd));
   label = '';
 
   constructor(private generator: ListGenerator, private zone: NgZone) {}

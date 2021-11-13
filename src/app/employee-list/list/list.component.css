@@ -20,3 +20,7 @@ i.fa-trash-o {
 mat-chip-list {
   margin-right: 15px;
 }
+
+.viewport {
+  height: 700px;
+}
